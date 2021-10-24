@@ -2,4 +2,10 @@
     <string name="app_name">HomeWork</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="details_describe">
+        名称：星空下的幸福\n
+        时间：2021/09/15\n
+        尺寸：1080*2160\n
+        大小：2.2M\n
+    </string>
 </resources>
