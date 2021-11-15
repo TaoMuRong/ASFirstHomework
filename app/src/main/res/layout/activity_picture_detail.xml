@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:backgroundTint="#3498db"
+    android:backgroundTint="#91d5ff"
     tools:context=".PictureDetailActivity">
 
     <TextView

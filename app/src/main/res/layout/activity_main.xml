@@ -12,6 +12,7 @@
     <FrameLayout
         android:id="@+id/framentContainer"
         android:layout_width="match_parent"
+        android:backgroundTint="#91d5ff"
         android:layout_height="match_parent" />
 
 
