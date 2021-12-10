@@ -8,4 +8,6 @@
         尺寸：1080*2160\n
         大小：2.2M\n
     </string>
+
+    <string name="action_settings">Settings</string>
 </resources>
