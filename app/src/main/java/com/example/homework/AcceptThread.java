@@ -19,13 +19,10 @@ public class AcceptThread extends Thread {
     private ConnectedThread mConnectedThread;
 
     public AcceptThread(BluetoothAdapter adapter, Handler handler) {
-        // Use a temporary object that is later assigned to mmServerSocket,
-        // because mmServerSocket is final
         mBluetoothAdapter = adapter;
         mHandler = handler;
         BluetoothServerSocket tmp = null;
         try {
-            // MY_UUID is the app's UUID string, also used by the client code
             tmp = mBluetoothAdapter.listenUsingRfcommWithServiceRecord(NAME, MY_UUID);
         } catch (IOException e) { }
         mmServerSocket = tmp;
@@ -33,7 +30,6 @@ public class AcceptThread extends Thread {
 
     public void run() {
         BluetoothSocket socket = null;
-        // Keep listening until exception occurs or a socket is returned
         while (true) {
             try {
                 mHandler.sendEmptyMessage(Constant.MSG_START_LISTENING);
@@ -42,9 +38,7 @@ public class AcceptThread extends Thread {
                 mHandler.sendMessage(mHandler.obtainMessage(Constant.MSG_ERROR, e));
                 break;
             }
-            // If a connection was accepted
             if (socket != null) {
-                // Do work to manage the connection (in a separate thread)
                 manageConnectedSocket(socket);
                 try {
                     mmServerSocket.close();
@@ -67,7 +61,6 @@ public class AcceptThread extends Thread {
         mConnectedThread.start();
     }
 
-    /** Will cancel the listening socket, and cause the thread to finish */
     public void cancel() {
         try {
             mmServerSocket.close();

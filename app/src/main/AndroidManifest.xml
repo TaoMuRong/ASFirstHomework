@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.homework">
 
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 访问网络，进行地图相关业务数据请求，包括地图数据，路线规划，POI检索等 -->
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
@@ -13,24 +14,25 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
+
         android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.AppBarOverlay">
-<!--        android:theme="@style/Theme.HomeWork">-->
+        android:theme="@style/Theme.HomeWork">
+<!--        android:theme="@style/AppTheme.AppBarOverlay">-->
+
 
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity2"
             android:exported="false" />
         <activity
             android:name=".PictureDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
