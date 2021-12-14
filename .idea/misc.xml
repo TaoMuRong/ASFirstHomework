@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/activity_download_vedio.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/activity_main2.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/activity_picture_detail.xml" value="0.264" />
@@ -14,6 +15,7 @@
         <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/fragment_blank.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/home_fragment.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/layout_straggered_grid_recyclerview_item.xml" value="0.2390625" />
+        <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/layout_tool_bar.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/list_item.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/messagelist.xml" value="0.25364583333333335" />
         <entry key="..\:/AndroidApplication/ASFirstHomework/app/src/main/res/layout/my_fragment.xml" value="0.264" />
